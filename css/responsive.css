@@ -1,0 +1,291 @@
+/* Estilos Responsivos para o Caroneiro */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .steps {
+        gap: 1.5rem;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-stats {
+        justify-content: center;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets Pequenos e Smartphones Grandes */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hero {
+        padding: 3rem 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .steps {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .step {
+        padding: 1.5rem;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-box input {
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .search-box button {
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    /* Chat Responsivo */
+    .chat-container {
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 80px);
+    }
+    
+    .chat-sidebar {
+        width: 100%;
+        height: 300px;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .chat-main {
+        height: 500px;
+    }
+    
+    /* Perfil Responsivo */
+    .profile-header {
+        padding: 1.5rem;
+    }
+    
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-stats {
+        gap: 1.5rem;
+    }
+    
+    /* Auth Pages */
+    .auth-card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+    
+    /* About Page */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-date {
+        position: static;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+    
+    /* Modal */
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .nav-brand h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-large {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .profile-container {
+        padding: 0 10px;
+    }
+    
+    .profile-section {
+        padding: 1rem;
+    }
+    
+    .chat-input {
+        flex-wrap: wrap;
+    }
+    
+    .chat-input input {
+        margin: 0.5rem 0;
+        order: 3;
+        width: 100%;
+    }
+    
+    .input-actions {
+        order: 1;
+    }
+    
+    .chat-input button {
+        order: 2;
+        flex: 1;
+        margin-left: 0.5rem;
+    }
+    
+    .message {
+        max-width: 85%;
+    }
+    
+    .auth-card {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .form-group input, 
+    .form-group textarea {
+        padding: 0.6rem;
+    }
+    
+    /* Destination Cards */
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .destination-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Telas Muito Pequenas */
+@media (max-width: 320px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 2rem 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.3rem;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Orientação Landscape para Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    .auth-container {
+        padding: 1rem 0;
+    }
+    
+    .chat-container {
+        height: calc(100vh - 60px);
+    }
+    
+    .chat-sidebar {
+        height: 200px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/hero-bg@2x.jpg');
+    }
+}
+
+/* Modo Escuro (opcional) */
+@media (prefers-color-scheme: dark) {
+    /* Poderia ser implementado no futuro */
+}
+
+/* Impressão */
+@media print {
+    .navbar,
+    .chat-input,
+    .btn-primary,
+    .search-box {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
