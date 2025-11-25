@@ -397,6 +397,10 @@ body {
     cursor: pointer;
 }
 
+#email, #password, #terms, #interests, #confirm-password, #name{
+    width: 40vw;
+}
+
 .form-group {
     margin-bottom: 1rem;
 }
@@ -458,6 +462,11 @@ footer {
         height: 300px;
     }
 }
+.container_login{
+    display: flex;
+    justify-content: center;
+}
+
 /* Mensagem de autenticação necessária */
 .auth-required-message {
     display: flex;

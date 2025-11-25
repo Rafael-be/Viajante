@@ -45,17 +45,20 @@ function loadFeaturedDestinations() {
     if (!destinationsGrid) return;
     
     const featuredDestinations = [
-        { name: 'Rio de Janeiro', country: 'Brasil', image: 'assets/images/rio.jpg' },
-        { name: 'São Paulo', country: 'Brasil', image: 'assets/images/sao-paulo.jpg' },
-        { name: 'Florianópolis', country: 'Brasil', image: 'assets/images/florianopolis.jpg' },
-        { name: 'Salvador', country: 'Brasil', image: 'assets/images/salvador.jpg' }
+        { name: 'Rio de Janeiro', country: 'Brasil', image: '../assets/images/rio.jpeg' },
+        { name: 'São Paulo', country: 'Brasil', image: '../assets/images/sao-paulo.jpeg' },
+        { name: 'Florianópolis', country: 'Brasil', image: '../assets/images/florianopolis.jpeg' },
+        { name: 'Salvador', country: 'Brasil', image: '../assets/images/salvador.jpeg' }
     ];
     
     destinationsGrid.innerHTML = featuredDestinations.map(destination => `
         <div class="destination-card">
+            <br>
+            <br>
             <div class="destination-image">
                 <img src="${destination.image}" alt="${destination.name}">
             </div>
+
             <div class="destination-info">
                 <h3>${destination.name}</h3>
                 <p>${destination.country}</p>
