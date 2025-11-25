@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Caroneiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Caroneiro</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="chat.html" class="active">Chat</a></li>
+                <li><a href="profile.html">Meu Perfil</a></li>
+                <li><a href="#" id="logout-btn">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="chat-container">
+        <div class="chat-sidebar">
+            <div class="chat-header">
+                <h2>Conversas</h2>
+                <button class="btn-primary" id="new-chat-btn">Nova Conversa</button>
+            </div>
+            <div class="conversations-list" id="conversations-list">
+                <!-- Lista de conversas será carregada aqui -->
+            </div>
+        </div>
+
+        <div class="chat-main">
+            <div class="chat-placeholder" id="chat-placeholder">
+                <p>Selecione uma conversa para começar a enviar mensagens</p>
+            </div>
+            <div class="active-chat" id="active-chat" style="display: none;">
+                <div class="chat-header">
+                    <div class="chat-user-info">
+                        <img src="assets/images/default-avatar.png" alt="Foto do usuário" class="user-avatar">
+                        <div>
+                            <h3 id="chat-user-name">Nome do Usuário</h3>
+                            <span class="user-status" id="user-status">Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Mensagens serão carregadas aqui -->
+                </div>
+                <div class="chat-input">
+                    <div class="input-actions">
+                        <button class="icon-btn" id="attach-btn" title="Anexar arquivo">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                        <button class="icon-btn" id="location-btn" title="Compartilhar localização">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+                    <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                    <button class="btn-primary" id="send-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para nova conversa -->
+    <div class="modal" id="new-chat-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nova Conversa</h2>
+            <div class="search-box">
+                <input type="text" id="user-search" placeholder="Buscar usuários...">
+            </div>
+            <div class="users-list" id="users-list">
+                <!-- Lista de usuários será carregada aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
