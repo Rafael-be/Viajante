@@ -1,0 +1,1 @@
+Sor, fiz isso em menos de uma semana, responsividade nao esta das melhores, muito menos o js. O terceiro trimestre esta mt corrido e ja havia passado e criação, se ler isso muito obrigado pela atenção.
